@@ -1,11 +1,13 @@
-import React from 'react';
+import Link from 'next/link';
 
-const Header: React.FC = () => {
+export default function Header() {
   return (
-    <header className="bg-blue-600 text-white p-4 shadow-md">
-      <h1 className="text-xl font-bold">Welcome to ALX Project 0x02</h1>
+    <header className="bg-gray-800 text-white p-4">
+      <nav className="flex space-x-4">
+        <Link href="/" className="hover:underline">Home</Link>
+        <Link href="/home" className="hover:underline">/home</Link>
+        <Link href="/about" className="hover:underline">/about</Link>
+      </nav>
     </header>
   );
-};
-
-export default Header;
+}
