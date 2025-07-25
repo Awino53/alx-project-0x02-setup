@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Card from '@/components/common/card'
 import PostModal from '@/components/common/PostModal'
+import Header from '@/components/layout/header'
 
 interface Post {
   title: string
